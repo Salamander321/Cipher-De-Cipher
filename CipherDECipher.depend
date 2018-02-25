@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1519553077 source:c:\c final project\cipherdecipher\main.c
+	"header.h"
+
+1519553136 c:\c final project\cipherdecipher\header.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<conio.h>
+	<math.h>
+	"Substitution.c"
+	"key.c"
+	"expansion.c"
+
+1519553083 c:\c final project\cipherdecipher\substitution.c
+
+1519553112 c:\c final project\cipherdecipher\key.c
+
+1519553150 c:\c final project\cipherdecipher\expansion.c
+
