@@ -9,6 +9,8 @@
 #include "Substitution.c"
 #include "key.c"
 #include "expansion.c"
+#include "initial_permute.c"
+#include "final_permute.c"
 
 void expansion(int *,int*);
 void substitution( int [],int []);
