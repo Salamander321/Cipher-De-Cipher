@@ -1,26 +1,23 @@
 // Final Permutation File
 
-void final_permute(int *mptr)       // mptr => message pointer; pointer to message array
+void final_permute(int msg[64])       // msg => array of final message
 {
-    int fp_message[8][8], i, j;           // fp_message => final permuted message
+    int fp_message[64], i, j;           // fp_message => final permuted message
 
     // permute message to fp_message
     for (i = 0; i < 8; i++)
     {
         for (j = 0; j < 8; j++)
         {
-            fp_message[i][j] = *(mptr + final_p_table[i][j]);
+            fp_message[8 * i + j] = msg[final_p_table[i][j]];
         }
     }
 
     // assign fp_message to the array passed in function
-    for (i = 0; i < 8; i++)
+    for (i = 0; i < 64; i++)
     {
-        for (j = 0; j < 8; j++)
-        {
-            *(*(mptr + i) + j) = fp_message[i][j]);
-        }
+        msg[i] = fp_message[i];
     }
+
     return;
 }
-
