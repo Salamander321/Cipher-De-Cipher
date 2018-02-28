@@ -25,6 +25,3 @@ void tobin(char [8], int [64]);
 
 
 #endif // HEADER_H_INCLUDED
-
-
-
