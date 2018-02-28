@@ -39,15 +39,9 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="final_permute.c">
-			<Option compilerVar="CC" />
-		</Unit>
 		<Unit filename="global_variables.h" />
 		<Unit filename="header.h">
 			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
-		<Unit filename="initial_permute.c">
-			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="key.c">
 			<Option compilerVar="CC" />
@@ -56,7 +50,7 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="s-box_permute.c">
+		<Unit filename="permutation.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tobin.c">

@@ -9,9 +9,7 @@
 #include "Substitution.c"
 #include "key.c"
 #include "expansion.c"
-#include "initial_permute.c"
-#include "final_permute.c"
-#include "s-box_permute.c"
+#include "permutation.c"
 #include "tobin.c"
 
 void expansion(int *,int*);
