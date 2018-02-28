@@ -18,10 +18,10 @@
 
 1519553150 c:\c final project\cipherdecipher\expansion.c
 
-1519651598 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\main.c
+1519837337 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\main.c
 	"header.h"
 
-1519652086 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\header.h
+1519838475 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\header.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -30,11 +30,9 @@
 	"Substitution.c"
 	"key.c"
 	"expansion.c"
-	"initial_permute.c"
-	"final_permute.c"
-	"global_variables.h"
+	"encryption.c"
 
-1519651598 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\substitution.c
+1519836382 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\substitution.c
 
 1519651598 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\key.c
 
@@ -44,7 +42,7 @@
 
 1519578134 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\final_permute.c
 
-1519652084 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\global_variables.h
+1519828468 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\global_variables.h
 
 1519659084 source:c:\c final project\cipherdecipher\cipher-de-cipher\main.c
 	"header.h"
@@ -81,4 +79,18 @@
 
 1519821160 source:c:\c final project\cipherdecipher\cipher-de-cipher\initial_permute.c
 	"global_variables.h"
+
+1519837847 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\permutation.c
+
+1519828468 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\tobin.c
+
+1519838402 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\roundfunction.c
+
+1519837847 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\permutation.c
+
+1519828468 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\tobin.c
+
+1519838365 c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\encryption.c
+
+1519838402 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\roundfunction.c
 

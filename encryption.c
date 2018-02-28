@@ -1,4 +1,4 @@
-void funct(int message1[],message2[],message3[]){
+void funct(int message1[],int message2[],int message3[]){
     for(int i = 0; i < 32; i++){
         message3[i] = message1[i] ^ message3[i];
     }
@@ -13,7 +13,7 @@ void reverse_order(int message[],int left_half[],int right_half[]){
 //function for encrypting data
 void encryption(int message[],int subkey[][48])
 {
-    int left_half[32],right_half[32],temp_first[32],temp_second[32];
+    int left_half[32],right_half[32],temp_first[32],temp_second[32], temp;
     init_permute(message);
     array_sub(message,left_half);
     array_sub(&message[32],right_half);

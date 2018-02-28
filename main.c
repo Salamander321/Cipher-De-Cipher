@@ -1,6 +1,6 @@
 
 #include "header.h"
-#include "global_variables.h"
+//#include "global_variables.h"
 
 int main()
 {

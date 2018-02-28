@@ -43,7 +43,6 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="global_variables.h" />
 		<Unit filename="header.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -55,6 +54,9 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="permutation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="roundfunction.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="tobin.c">
