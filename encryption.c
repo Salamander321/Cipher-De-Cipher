@@ -1,3 +1,4 @@
+//sub function of encryption function
 void funct(int message1[],int message2[],int message3[]){
     for(int i = 0; i < 32; i++){
         message3[i] = message1[i] ^ message3[i];
@@ -28,6 +29,7 @@ void encryption(int message[],int subkey[][48])
     reverse_order(message,left_half,right_half);
     final_permute(message);
 }
+//function for decrypting message
 void decryption(int message[],int subkey[][48])
 {
 

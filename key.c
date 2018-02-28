@@ -80,3 +80,10 @@ void subkey_generation(int *key_56,int subkey_16[][48])
         }
     }
 }
+void DES_key(char key[],int sub_key[][48])
+{
+    int key_56[56],key_64[64];
+    tobin(key,key_64);
+    key_permute(key_64,key_56);
+    subkey_generation(key_56,sub_key);
+}

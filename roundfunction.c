@@ -1,3 +1,4 @@
+//round function of encryption function.
 void round_function(int message[],int key[])
 {
     int expanded_message[48],xored_message[48];

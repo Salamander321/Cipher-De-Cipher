@@ -29,4 +29,6 @@ void reverse_order(int [],int [],int []);
 void funct(int [],int [],int []);
 void encryption(int [],int [][48]);
 void decryption(int [],int [][48]);
+void DES_key(char [],int [][48]);
+
 #endif // HEADER_H_INCLUDED
