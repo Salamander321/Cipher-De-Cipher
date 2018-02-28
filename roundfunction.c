@@ -6,5 +6,6 @@ void round_function(int message[],int key[])
     {
         xored_message[i] = expanded_message[i] ^ key[i];
     }
-    substitution(xored_message,message)
+    substitution(xored_message,message);
+    permute_sbox(message);
 }

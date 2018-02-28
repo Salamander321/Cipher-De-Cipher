@@ -70,3 +70,10 @@ void substitution(int unsub_array[],int sub_array[])
         count_sub+=4;
     }
 }
+void array_sub(int arrayfirst[],int arraysecond[])
+{
+    for (int i = 0; i < 32;i ++)
+    {
+        arraysecond[i] = arrayfirst[i];
+    }
+}

@@ -1,3 +1,4 @@
+#include "global_variables.h"
 // Initial Permutation
 
 void init_permute(int msg[64])            // msg => array of message read from file
