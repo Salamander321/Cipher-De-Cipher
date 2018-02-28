@@ -9,8 +9,8 @@
 #include "Substitution.c"
 #include "key.c"
 #include "expansion.c"
-#include "initial_permute.c"
-#include "final_permute.c"
+#include "permutation.c"
+#include "tobin.c"
 
 void expansion(int *,int*);
 void substitution( int [],int []);
@@ -20,10 +20,8 @@ void subkey_permute(int*,int*);
 void subkey_shift(int*,int*,int[][56]);
 void final_permute(int [64]);
 void init_permute(int [64]);
-void encryption(int [],int []);
-void round_function(int [],int []);
+void permute_sbox(int [32]);
+void tobin(char [8], int [64]);
+
 
 #endif // HEADER_H_INCLUDED
-
-
-
