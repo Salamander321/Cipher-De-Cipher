@@ -13,11 +13,13 @@ void reverse_order(int message[],int left_half[],int right_half[]){
 //function for encrypting data
 void encryption(int message[],int subkey[][48])
 {
-    int left_half[32],right_half[32],temp_first[32],temp_second[32], temp;
+
+    int left_half[32],right_half[32],temp_first[32],temp_second[32], temp[32];
+
     init_permute(message);
     array_sub(message,left_half);
     array_sub(&message[32],right_half);
-    for (int i = 0 ; i < 16 ; i++){
+    for (int i = 0  ; i < 16 ; i++){
         array_sub(right_half,temp_first);
         array_sub(temp_first,temp_second);
         round_function(temp_second,subkey[i]);
