@@ -1,5 +1,5 @@
 // Final Permutation File
-
+#include "global_variables.h"
 void final_permute(int msg[64])       // msg => array of final message
 {
     int fp_message[64], i, j;           // fp_message => final permuted message

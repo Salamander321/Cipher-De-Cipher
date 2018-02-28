@@ -20,6 +20,8 @@ void subkey_permute(int*,int*);
 void subkey_shift(int*,int*,int[][56]);
 void final_permute(int [64]);
 void init_permute(int [64]);
+void encryption(int [],int []);
+void round_function(int [],int []);
 
 #endif // HEADER_H_INCLUDED
 
