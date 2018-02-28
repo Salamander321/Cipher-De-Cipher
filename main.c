@@ -5,14 +5,19 @@
 int main()
 {
     printf("Hello world!\n");
-    int arr[48] = {1,0,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,1,0,1,0,1,0,1,0,1,1,0,0,1,1,1,0,0,0,0,1,0,1,0,11,1,0,0,1,1};
-        int arr2[32];
-        substitution(arr,arr2);
-        printf("\n");
-        for (int i = 0; i <32;i++)
-        {   if ((i) % 4 == 0)
-                printf("\n");
-            printf("%d\t",arr2[i]);
-        }
+    char message1[] = "01234567";
+    int message[64];
+    int sub_key[16][48];
+    int key_56[56];
+    int key_64[64] = {0,0,0,1,0,0,1,1,0,0,1,1,0,1,0,0,0,1,0,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,0,1,1,0,1,1,1,0,1,1,1,1,0,0,1,1,0,1,1,1,1,1,1,1,1,1,0,0,0,1};
+    key_permute(key_64,key_56);
+    subkey_generation(key_56,sub_key);
+    tobin(message1,message);
+    encryption(message,sub_key);
+    for (int i = 0; i < 64;i++)
+    {
+        printf("%d",message[i]);
+    }
+
     return 0;
 }
