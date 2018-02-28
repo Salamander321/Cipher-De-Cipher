@@ -1,6 +1,6 @@
 
 #include "header.h"
-//#include "global_variables.h"
+#include "global_variables.h"
 
 int main()
 {
@@ -13,9 +13,21 @@ int main()
     key_permute(key_64,key_56);
     subkey_generation(key_56,sub_key);
     tobin(message1,message);
+    printf("Before encryption\n");
+    for(int i = 0; i < 64; i++){
+        printf("%d",message[i]);
+    }
+    printf("\n");
+    printf("After encryption\n");
     encryption(message,sub_key);
     for (int i = 0; i < 64;i++)
     {
+        printf("%d",message[i]);
+    }
+    printf("\n");
+    printf("After decryption\n");
+    decryption(message,sub_key);
+    for(int i = 0; i < 64; i++){
         printf("%d",message[i]);
     }
 

@@ -28,5 +28,5 @@ void array_sub(int [],int []);
 void reverse_order(int [],int [],int []);
 void funct(int [],int [],int []);
 void encryption(int [],int [][48]);
-
+void decryption(int [],int [][48]);
 #endif // HEADER_H_INCLUDED
