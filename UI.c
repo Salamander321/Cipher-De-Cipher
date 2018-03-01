@@ -130,7 +130,9 @@ void encryption_screen(){
 start:
 system("cls");
 char key_character[8];
-char file_name[100];
+char file_namein[100];
+char file_nameout[100];
+
 logo();
 box();
 gotoxy(45,14);
@@ -138,15 +140,20 @@ printf("Input the following information");
 gotoxy(25,18);
 printf("Enter 8 Characters Key: ");
 scanf("%s",key_character);
+if (strlen(key_character) != 8)
+    goto start;
 gotoxy(25,20);
 printf("Enter filename you want to encrypt: ");
-scanf("%s",file_name);
+scanf("%s",file_namein);
+gotoxy(25,22);
+printf("Enter output filename: ");
+scanf("%s",file_nameout);
 int x = confirm_screen();
 if (x == 1)
     goto start;
 else if (x == 0)
 {
-    file_encrypt(key_character,file_name);
+    file_encrypt(key_character,file_namein, file_nameout);
     succesfull();
 }
 else if (x==-1){
@@ -161,23 +168,29 @@ void decryption_screen(){
 start:
 system("cls");
 char key_character[8];
-char file_name[100];
+char file_namein[100];
+char file_nameout[100];
 logo();
 box();
 gotoxy(45,14);
 printf("Input the following information");
 gotoxy(25,18);
-printf("Enter 8 Characters Key: ");
+printf("Enter 8 Character Key: ");
 scanf("%s",key_character);
+if (strlen(key_character) != 8)
+    goto start;
 gotoxy(25,20);
 printf("Enter filename you want to decrypt: ");
-scanf("%s",file_name);
+scanf("%s",file_namein);
+gotoxy(25, 22);
+printf("Enter output filename: ");
+scanf("%s",file_nameout);
 int x = confirm_screen();
 if (x == 1)
     goto start;
 else if (x == 0)
 {
-    file_decrypt(key_character,file_name);
+    file_decrypt(key_character, file_namein, file_nameout);
     succesfull();
 }
 else if (x==-1){

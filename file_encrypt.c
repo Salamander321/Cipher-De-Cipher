@@ -1,4 +1,4 @@
-void file_encrypt(char key[],char file_name[])
+void file_encrypt(char key[],char file_namein[], char file_nameout[])
 {
 FILE *fptr_plain,        // fptr_plain => input file (plain)
          *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
@@ -13,8 +13,8 @@ FILE *fptr_plain,        // fptr_plain => input file (plain)
          de_exit_state = false;     //decryption state
 
     // Open Files for encryption
-    fptr_plain = fopen(file_name, "r");
-    fptr_encrypt = fopen("encryption.txt", "w");
+    fptr_plain = fopen(file_namein, "r");
+    fptr_encrypt = fopen(file_nameout, "w");
 
     // File Unavailable Message
     if (fptr_plain == NULL)
@@ -59,7 +59,7 @@ FILE *fptr_plain,        // fptr_plain => input file (plain)
     fclose(fptr_plain);
     fclose(fptr_encrypt);
 }
-void file_decrypt(char key[],char file_name[])
+void file_decrypt(char key[],char file_namein[], char file_nameout[])
 {
      FILE *fptr_plain,        // fptr_plain => input file (plain)
          *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
@@ -75,8 +75,8 @@ void file_decrypt(char key[],char file_name[])
     // Generate Sub-keys
     DES_key(key,sub_key);
     //Open files for decryption
-    fptr_encrypt = fopen(file_name, "r");
-    fptr_decrypt = fopen("decryption.txt", "w");
+    fptr_encrypt = fopen(file_namein, "r");
+    fptr_decrypt = fopen(file_nameout, "w");
 
     // File Unavailable Message
     if (fptr_encrypt == NULL)

@@ -63,12 +63,15 @@
 		</Unit>
 		<Unit filename="permutation.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
 		</Unit>
 		<Unit filename="roundfunction.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
 		</Unit>
 		<Unit filename="tobin.c">
 			<Option compilerVar="CC" />
+			<Option target="Release" />
 		</Unit>
 		<Extensions>
 			<code_completion />
