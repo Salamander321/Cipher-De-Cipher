@@ -146,7 +146,8 @@ if (x == 1)
     goto start;
 else if (x == 0)
 {
-    //yout code
+    file_encrypt(key_character,file_name);
+    succesfull();
 }
 else if (x==-1){
     int y = main();
@@ -176,7 +177,8 @@ if (x == 1)
     goto start;
 else if (x == 0)
 {
-    //yout code
+    file_decrypt(key_character,file_name);
+    succesfull();
 }
 else if (x==-1){
     int y = main();
@@ -215,4 +217,16 @@ else if(press == 22)
     }
 else
     printf("Bug");
+}
+void succesfull(){
+system("cls");
+logo();
+box();
+gotoxy(45,14);
+printf("Successfully Completed Task");
+gotoxy(45,16);
+printf("Press any key to continue");
+getch();
+fflush(stdin);
+main_UI();
 }

@@ -18,6 +18,7 @@
 //#include "roundfunction.c"
 #include "encryption.c"
 #include "UI.c"
+#include "file_encrypt.c"
 // Functions Prototypes
 int keys(int );
 void logo();
@@ -44,6 +45,9 @@ void funct(int [],int [],int []);
 void encryption(int [],int [][48]);
 void decryption(int [],int [][48]);
 void DES_key(char [],int [][48]);
+void file_encrypt(char key[],char file_name[]);
+void file_decrypt(char key[],char file_name[]);
+void succesfull();
 
 
 #endif // HEADER_H_INCLUDED

@@ -108,13 +108,13 @@
 
 1519877833 source:c:\users\tiwar\documents\git\cipher-de-cipher\cipher-de-cipher\roundfunction.c
 
-1519925738 source:c:\c final project\cipher-de-cipher\main.c
+1519943033 source:c:\c final project\cipher-de-cipher\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
 	"header.h"
 
-1519925787 c:\c final project\cipher-de-cipher\header.h
+1519943283 c:\c final project\cipher-de-cipher\header.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -126,6 +126,7 @@
 	"expansion.c"
 	"encryption.c"
 	"UI.c"
+	"file_encrypt.c"
 
 1519925009 c:\c final project\cipher-de-cipher\substitution.c
 
@@ -135,11 +136,13 @@
 
 1519925997 c:\c final project\cipher-de-cipher\encryption.c
 
-1519926142 c:\c final project\cipher-de-cipher\ui.c
+1519943341 c:\c final project\cipher-de-cipher\ui.c
 
 1519925009 source:c:\c final project\cipher-de-cipher\permutation.c
 
 1519925009 source:c:\c final project\cipher-de-cipher\roundfunction.c
 
 1519925009 source:c:\c final project\cipher-de-cipher\tobin.c
+
+1519943018 c:\c final project\cipher-de-cipher\file_encrypt.c
 
