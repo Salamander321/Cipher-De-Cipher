@@ -12,3 +12,20 @@ void tobin(char c[8], int bin[64])
     }
     return;
 }
+
+// binary to decimal function
+void todeci(int bin[64], int ascii_text[8])
+{
+    int i, j, k;
+
+    for (i = 0; i < 8; i++)
+    {
+        ascii_text[i] = '\0';
+        for(j = 0, k = 7; j < 8; j++, k--)
+        {
+            ascii_text[i] = ascii_text[i] + (bin[(i * 8 + k)] * pow(2, j));
+        }
+    }
+
+    return;
+}

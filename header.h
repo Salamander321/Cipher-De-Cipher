@@ -1,11 +1,15 @@
 #ifndef HEADER_H_INCLUDED
 #define HEADER_H_INCLUDED
 
+// Included Header File
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include <conio.h>
 #include <math.h>
+#include <stdbool.h>
+
+// Included Project Files
 #include "Substitution.c"
 #include "key.c"
 #include "expansion.c"
@@ -14,6 +18,7 @@
 //#include "roundfunction.c"
 #include "encryption.c"
 
+// Functions Prototypes
 void expansion(int *,int*);
 void substitution( int [],int []);
 void key_permute(int*,int*);
@@ -24,6 +29,7 @@ void final_permute(int []);
 void init_permute(int []);
 void permute_sbox(int []);
 void tobin(char [], int []);
+void todeci(int [], char []);
 void array_sub(int [],int []);
 void reverse_order(int [],int [],int []);
 void funct(int [],int [],int []);
