@@ -47,6 +47,10 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="file_encrypt.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="header.h">
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
