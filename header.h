@@ -17,8 +17,16 @@
 //#include "tobin.c"
 //#include "roundfunction.c"
 #include "encryption.c"
-
+#include "UI.c"
 // Functions Prototypes
+int keys(int );
+void logo();
+void box();
+void encryption_screen();
+void box_input(int x, int y);
+int confirm_screen();
+void decryption_screen();
+void main_UI();
 void expansion(int *,int*);
 void substitution( int [],int []);
 void key_permute(int*,int*);
@@ -36,5 +44,6 @@ void funct(int [],int [],int []);
 void encryption(int [],int [][48]);
 void decryption(int [],int [][48]);
 void DES_key(char [],int [][48]);
+
 
 #endif // HEADER_H_INCLUDED

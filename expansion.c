@@ -13,8 +13,10 @@ void expansion(int *data_32,int*data_48)//function to expand 32 bit to 48 bit.
 {
     int index_32;
     int index_48 = 0;
-    for (int i = 0; i < 8; i++){
-        for (int j = 0; j < 6;j++){
+    for (int i = 0; i < 8; i++)
+        {
+        for (int j = 0; j < 6;j++)
+        {
             index_32 = expand_table[i][j];
             data_48[index_48++] = data_32[index_32];
         }

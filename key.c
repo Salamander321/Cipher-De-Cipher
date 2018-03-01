@@ -20,8 +20,10 @@ void key_permute(int *key_unpermute,int *key_permuted)
 {
 int index_permute = 0;
 int index_unpermute;
-for (int i = 0; i <8;i++){
-    for (int j = 0; j<7;j++){
+for (int i = 0; i <8;i++)
+    {
+    for (int j = 0; j<7;j++)
+    {
         index_unpermute = permutekey__table[i][j] - 1;
         key_permuted [index_permute++] = key_unpermute[index_unpermute];
     }

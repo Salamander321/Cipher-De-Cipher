@@ -35,6 +35,10 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
+		<Unit filename="UI.c">
+			<Option compilerVar="CC" />
+			<Option target="&lt;{~None~}&gt;" />
+		</Unit>
 		<Unit filename="encryption.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />

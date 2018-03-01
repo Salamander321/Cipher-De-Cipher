@@ -1,18 +1,19 @@
 // Main Program File
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
 #include "header.h"
 
 int main()
-{
+{    main_UI();
     // Variable Declarations
-    FILE *fptr_plain,        // fptr_plain => input file (plain)
+    /*FILE *fptr_plain,        // fptr_plain => input file (plain)
          *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
          *fptr_decrypt;      // fptr_decrypted => decrypted file (plain)
 
     int bin_message[64];
     int sub_key[16][48];
     int text_count = 0, i, j;
-
     char fchar;
     unsigned char key[] = "HEXKEY12";
 
@@ -112,7 +113,7 @@ int main()
 
     // Close Decryption Files
     fclose(fptr_encrypt);
-    fclose(fptr_decrypt);
+    fclose(fptr_decrypt);*/
 
     return 0;
 }
