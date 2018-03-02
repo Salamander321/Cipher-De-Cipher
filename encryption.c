@@ -2,7 +2,7 @@
 void funct(int message1[],int message2[],int message3[]){
     for(int i = 0; i < 32; i++)
         {
-        message3[i] = message1[i] ^ message3[i];
+        message3[i] = message1[i] ^ message2[i];
     }
 }
 //function for adding two half of message in a reverse order

@@ -1,16 +1,15 @@
 void file_encrypt(char key[],char file_namein[], char file_nameout[])
 {
 FILE *fptr_plain,        // fptr_plain => input file (plain)
-         *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
-         *fptr_decrypt;      // fptr_decrypted => decrypted file (plain)
+         *fptr_encrypt;      // fptr_encrypt => output file (encrypted)
 
     int bin_message[64];
     int sub_key[16][48];
     int text_count = 0, i, j;
     char fchar;
 
-    bool en_exit_state = false,     //encryption state
-         de_exit_state = false;     //decryption state
+    bool en_exit_state = false;     //encryption state
+
 
     // Open Files for encryption
     fptr_plain = fopen(file_namein, "r");
@@ -92,7 +91,7 @@ void file_decrypt(char key[],char file_namein[], char file_nameout[])
     // Decryption Loop
     while(! de_exit_state)
     {
-        int decr_message[64] = {0};
+        int decr_message[64];// = {0};
 
         // Get input from file
         for(i = 0; i < 64; i++)
