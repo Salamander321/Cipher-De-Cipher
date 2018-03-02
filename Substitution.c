@@ -1,21 +1,21 @@
 //#include "header.h"
 int sub_table[8][4][16] = { {
-                                        {14 , 4 , 13 , 1 , 2 , 15 , 11 , 8 ,  3 , 10 , 6 , 12 , 5 , 9 , 0 , 7},
-                                        { 0 , 15 , 7 , 4 , 14 , 2 , 13 , 1 , 10 , 6 , 12 , 11 , 9 , 5 , 3 , 8},
-                                        { 4 , 1 , 14 , 8 , 13 , 6 ,  2 , 11 , 15 , 12 ,  9 ,  7 ,  3 , 10 , 5 , 0},
-                                        { 15 , 12 , 8 , 2 , 4 , 9 , 1 , 7 , 5 , 11 , 3 , 14 , 10 , 0 , 6 , 13}
+                                        {14 ,  4 , 13 , 1 ,  2 , 15 , 11 ,  8 ,  3 , 10 ,  6 , 12 ,  5 ,  9 , 0 ,  7},
+                                        { 0 , 15 ,  7 , 4 , 14 ,  2 , 13 ,  1 , 10 ,  6 , 12 , 11 ,  9 ,  5 , 3 ,  8},
+                                        { 4 ,  1 , 14 , 8 , 13 ,  6 ,  2 , 11 , 15 , 12 ,  9 ,  7 ,  3 , 10 , 5 ,  0},
+                                        {15 , 12 ,  8 , 2 ,  4 ,  9 ,  1 ,  7 ,  5 , 11 ,  3 , 14 , 10 ,  0 , 6 , 13}
                                     },
                                     {
-                                        {15 , 1 , 8 , 14 ,  6 , 11 , 3 , 4 , 9 , 7 , 2 , 13 , 12 , 0 , 5 , 10},
-                                        {3 , 13 , 4 , 7 , 15 , 2 , 8 , 14 , 12 , 0 , 1 , 10 , 6 , 9 , 11 , 5},
-                                        {0 , 14 , 7 , 11 , 10 , 4 , 13 , 1 , 5 , 8 , 12 , 6 , 9 , 3 ,  2 , 15},
-                                        {13 , 8 , 10 , 1 , 3 , 15 , 4 , 2 , 11 , 6 , 7 , 12 , 0 , 5 , 14 , 9}
+                                        {15 ,  1 ,  8 , 14 ,  6 , 11 ,  3 ,  4 ,  9 , 7 ,  2 , 13 , 12 , 0 ,  5 , 10},
+                                        { 3 , 13 ,  4 ,  7 , 15 ,  2 ,  8 , 14 , 12 , 0 ,  1 , 10 ,  6 , 9 , 11 ,  5},
+                                        { 0 , 14 ,  7 , 11 , 10 ,  4 , 13 ,  1 ,  5 , 8 , 12 ,  6 ,  9 , 3 ,  2 , 15},
+                                        {13 ,  8 , 10 ,  1 ,  3 , 15 ,  4 ,  2 , 11 , 6 ,  7 , 12 ,  0 , 5 , 14 ,  9}
                                         },
                                      {
-                                        {10 , 0 , 9 , 14 ,  6 , 3 , 15 , 5 , 1 , 13 , 12 , 7 , 11 , 4 , 2 , 8},
-                                        {13 , 7 , 0 , 9 , 3 , 4 , 6 , 10 , 2 , 8 , 5 , 14 , 12 , 11 , 15 , 1},
-                                        {13 , 6 , 4 , 9 , 8,  15 , 3 , 0 , 11 , 1 , 2 , 12 , 5 , 10 , 14 , 7},
-                                        {1 , 10 , 13 , 0 , 6 , 9 , 8 , 7 , 4 , 15 , 14 , 3 , 11 , 5 , 2 , 12}
+                                        {10 ,  0 ,  9 , 14 ,  6 ,  3 , 15 ,  5 ,  1 , 13 , 12 ,  7 , 11 ,  4 ,  2 ,  8},
+                                        {13 ,  7 ,  0 ,  9 ,  3 ,  4 ,  6 , 10 ,  2 ,  8 ,  5 , 14 , 12 , 11 , 15 ,  1},
+                                        {13 ,  6 ,  4 ,  9 ,  8 , 15 ,  3 ,  0 , 11 ,  1 ,  2 , 12 ,  5 , 10 , 14 ,  7},
+                                        { 1 , 10 , 13 ,  0 ,  6 ,  9 ,  8 ,  7 ,  4 , 15 , 14 ,  3 , 11 ,  5 ,  2 ,  12}
                                      },
                                     {
                                         {7 , 13 , 14 , 3 , 0 , 6 , 9 , 10 , 1 , 2 , 8 , 5 , 11 , 12 , 4 , 15},
@@ -54,6 +54,7 @@ void substitution(int unsub_array[],int sub_array[])
     int count_unsub = 0;//indexing for unsubstituted array
     int row,column,temp;
     int count_sub = 0;//indexing for substituted array
+
     for (int i = 0;i < 8;i++)//loop for 8 substitution boxes
     {
         //conversion of binary to decimal for calculating row no.
@@ -61,15 +62,18 @@ void substitution(int unsub_array[],int sub_array[])
         //conversion of binary to decimal for calculating column no.
         column = unsub_array[count_unsub+1]*8+unsub_array[count_unsub+2]*4+unsub_array[count_unsub+3]*2+unsub_array[count_unsub+4]*1;
         temp = sub_table[i][row][column];
+
         //loop for converting decimal to binary
         for (int j = 3; j >= 0;j--)
         {   sub_array[count_sub+j] = temp&1;
             temp>>=1;
         }
+
         count_unsub+=6;
         count_sub+=4;
     }
 }
+
 void array_sub(int arrayfirst[],int arraysecond[])
 {
     for (int i = 0; i < 32;i ++)

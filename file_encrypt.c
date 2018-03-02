@@ -1,3 +1,7 @@
+// Encryption and Decryption loop file
+
+
+// Encryption loop
 void file_encrypt(char key[],char file_namein[], char file_nameout[])
 {
 FILE *fptr_plain,        // fptr_plain => input file (plain)
@@ -8,7 +12,7 @@ FILE *fptr_plain,        // fptr_plain => input file (plain)
     int text_count = 0, i, j;
     char fchar;
 
-    bool en_exit_state = false;     //encryption state
+    bool en_exit_state = false;     //encryption loop state
 
 
     // Open Files for encryption
@@ -23,12 +27,12 @@ FILE *fptr_plain,        // fptr_plain => input file (plain)
     }
 
     // Generate Sub-keys
-    DES_key(key,sub_key);
+    DES_key(key, sub_key);
 
     // Encryption Loop
     while (! en_exit_state)
     {
-        char txt_message[8] = {'\0'};      // array to read from file, initialized to 0
+        unsigned char txt_message[8] = {0};      // array to read from file, initialized to 0
 
         for (text_count = 0; text_count < 8; text_count++)
         {
@@ -58,21 +62,24 @@ FILE *fptr_plain,        // fptr_plain => input file (plain)
     fclose(fptr_plain);
     fclose(fptr_encrypt);
 }
+
+// Decryption Loop
 void file_decrypt(char key[],char file_namein[], char file_nameout[])
 {
-     FILE *fptr_plain,        // fptr_plain => input file (plain)
-         *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
-         *fptr_decrypt;      // fptr_decrypted => decrypted file (plain)
+    // Variable Declarations
+     FILE *fptr_encrypt,      // fptr_encrypt => output file (encrypted)
+          *fptr_decrypt;      // fptr_decrypted => decrypted file (plain)
 
-    int bin_message[64];
     int sub_key[16][48];
-    int text_count = 0, i, j;
+    int i, j;
+
     char fchar;
-    bool en_exit_state = false,     //encryption state
-         de_exit_state = false;     //decryption state
+
+    bool de_exit_state = false;     //decryption loop state
 
     // Generate Sub-keys
     DES_key(key,sub_key);
+
     //Open files for decryption
     fptr_encrypt = fopen(file_namein, "r");
     fptr_decrypt = fopen(file_nameout, "w");
@@ -91,7 +98,7 @@ void file_decrypt(char key[],char file_namein[], char file_nameout[])
     // Decryption Loop
     while(! de_exit_state)
     {
-        int decr_message[64];// = {0};
+        int decr_message[64] = {0};
 
         // Get input from file
         for(i = 0; i < 64; i++)
@@ -101,6 +108,7 @@ void file_decrypt(char key[],char file_namein[], char file_nameout[])
             if (fchar2 == EOF)
             {
                 de_exit_state = true;
+                goto end_loop;      //Line 123, before close files
                 break;
             }
 
@@ -118,6 +126,7 @@ void file_decrypt(char key[],char file_namein[], char file_nameout[])
     }
 
     // Close Decryption Files
+    end_loop:
     fclose(fptr_encrypt);
     fclose(fptr_decrypt);
 }
