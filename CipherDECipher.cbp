@@ -39,7 +39,7 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="encryption.c">
+		<Unit filename="encryption-decryption.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -47,7 +47,7 @@
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="file_encrypt.c">
+		<Unit filename="file_encrypt_decrypt.c">
 			<Option compilerVar="CC" />
 			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
@@ -63,15 +63,15 @@
 		</Unit>
 		<Unit filename="permutation.c">
 			<Option compilerVar="CC" />
-			<Option target="Release" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Unit filename="roundfunction.c">
 			<Option compilerVar="CC" />
-			<Option target="Release" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
-		<Unit filename="tobin.c">
+		<Unit filename="tobin-deci.c">
 			<Option compilerVar="CC" />
-			<Option target="Release" />
+			<Option target="&lt;{~None~}&gt;" />
 		</Unit>
 		<Extensions>
 			<code_completion />

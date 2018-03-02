@@ -15,11 +15,11 @@
 #include "key.c"
 #include "expansion.c"
 #include "permutation.c"
-#include "tobin.c"
+#include "tobin-deci.c"
 #include "roundfunction.c"
-#include "encryption.c"
+#include "encryption-decryption.c"
 #include "UI.c"
-#include "file_encrypt.c"
+#include "file_encrypt_decrypt.c"
 
 // Functions Prototypes
 int keys(int );

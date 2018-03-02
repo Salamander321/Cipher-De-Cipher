@@ -119,6 +119,8 @@ int confirm_screen()
     logo();
     box();
 
+    gotoxy(22,26);
+    printf("**Make sure that the input file is in the same directory as the program");
     gotoxy(43,14);
     printf("Do you want to confirm your input data ?");
     gotoxy(48,18);
@@ -154,6 +156,8 @@ void encryption_screen()
 
     gotoxy(45,14);
     printf("Input the following information");
+    gotoxy(22,26);
+    printf("**Make sure that the input file is in the same directory as the program");
     gotoxy(25,18);
     printf("Enter 8 Characters Key: ");
     scanf("%s",key_character);
@@ -199,6 +203,8 @@ void decryption_screen()
 
     gotoxy(45,14);
     printf("Input the following information");
+    gotoxy(22,26);
+    printf("**Make sure that the input file is in the same directory as the program");
     gotoxy(25,18);
     printf("Enter 8 Character Key: ");
     scanf("%s",key_character);
