@@ -1,7 +1,7 @@
 void file_encrypt(char key[],char file_namein[], char file_nameout[])
 {
 FILE *fptr_plain,        // fptr_plain => input file (plain)
-         *fptr_encrypt;      // fptr_encrypt => output file (encrypted)
+     *fptr_encrypt;      // fptr_encrypt => output file (encrypted)
 
     int bin_message[64];
     int sub_key[16][48];

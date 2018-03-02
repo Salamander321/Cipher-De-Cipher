@@ -1,5 +1,6 @@
 #ifndef HEADER_H_INCLUDED
 #define HEADER_H_INCLUDED
+#pragma once
 
 // Included Header File
 #include <stdio.h>
@@ -19,6 +20,7 @@
 #include "encryption.c"
 #include "UI.c"
 #include "file_encrypt.c"
+
 // Functions Prototypes
 int keys(int );
 void logo();

@@ -146,13 +146,14 @@
 
 1519943018 c:\c final project\cipher-de-cipher\file_encrypt.c
 
-1519943998 source:c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\main.c
+1519996051 source:c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\main.c
 	<stdio.h>
 	<stdlib.h>
 	<windows.h>
+	<math.h>
 	"header.h"
 
-1519945297 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\header.h
+1519996051 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\header.h
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
@@ -169,17 +170,17 @@
 	"UI.c"
 	"file_encrypt.c"
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\substitution.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\substitution.c
 
-1519944474 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\key.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\key.c
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\expansion.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\expansion.c
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\encryption.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\encryption.c
 
-1519945263 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\ui.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\ui.c
 
-1519945444 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\file_encrypt.c
+1519995606 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\file_encrypt.c
 
 1519943998 source:c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\permutation.c
 
@@ -187,11 +188,11 @@
 
 1519943998 source:c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\tobin.c
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\permutation.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\permutation.c
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\tobin.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\tobin.c
 
-1519943998 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\roundfunction.c
+1519995397 c:\users\tiwar\documents\c lab\c project\cipher-de-cipher\roundfunction.c
 
 1519945895 source:c:\users\tiwar\documents\c lab\test\cipher-de-cipher\main.c
 	<stdio.h>
